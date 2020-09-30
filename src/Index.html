@@ -14,26 +14,41 @@ td {
 	text-align: center;
 }
 </style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
-<table width="992" height="725" border="0">
+<table width="992" height="463" border="0">
   <tr>
-    <th height="132" bgcolor="#CCFFFF" scope="col"><img src="2020/20200930114510.png" width="208" height="178" /></th>
-    <th height="132" bgcolor="#CCFFFF" scope="col">小闹心店铺</th>
+    <th width="186" height="132" bgcolor="#CCFFFF" scope="col"><img src="Resources/20200930114510.png" width="239" height="218" /></th>
+    <th width="278" height="132" bgcolor="#CCFFFF" scope="col">小闹心店铺</th>
     <th colspan="2" bgcolor="#CCFFFF" scope="col">  <marquee direction=right>
     <p>&nbsp;</p>
     <p>欢迎光临，如有需求请联系</p>
     </marquee><p> &nbsp;</th>
   </tr>
   <tr>
-    <th width="186" height="52" bgcolor="#99CCCC" scope="row">首页</th>
-    <th width="278" bgcolor="#99CCCC" scope="row">维修预约</th>
-    <td width="255" bgcolor="#99CCCC">商品中心</td>
-    <td width="255" bgcolor="#99CCCC">联系方式</td>
+    <th height="22" colspan="4" bgcolor="#99CCCC" scope="row">&nbsp;</th>
   </tr>
   <tr>
-    <th height="272" colspan="4" bgcolor="#99CCCC" scope="row">&nbsp;</th>
+    <th height="40" colspan="4" bgcolor="#99CCCC" scope="row"><ul id="MenuBar1" class="MenuBarHorizontal">
+      <li><a class="MenuBarItemSubmenu" href="Resources/Untitled-2.html">首页</a>        </li>
+      <li><a href="#">预约维修</a></li>
+      <li><a class="MenuBarItemSubmenu" href="#">相关商品 </a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">项目 3.1</a>
+            <ul>
+              <li><a href="#">项目 3.1.1</a></li>
+              <li><a href="#">项目 3.1.2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">项目 3.2</a></li>
+          <li><a href="#">项目 3.3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">联系方式</a></li>
+    </ul></th>
   </tr>
   <tr>
     <th colspan="4" scope="row">
@@ -42,5 +57,8 @@ td {
     </th>
   </tr>
 </table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
 </body>
 </html>
